@@ -40,6 +40,10 @@ if [ "$TARGET_LINK" ]; then
   DEPLOY_REPO="$TARGET_LINK"
 fi
 
+echo "发布仓库==：$DEPLOY_REPO"
+echo "发布分支==：$DEPLOY_BRAN"
+echo "github作者==：$GITHUB_ACTOR"
+
 echo "==> Prepare to deploy"
 
 git init
